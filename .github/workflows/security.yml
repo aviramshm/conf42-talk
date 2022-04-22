@@ -44,7 +44,7 @@ jobs:
           path: 'terraform'
           output_path: myResults/
       - name: display kics results
-        if: always()
+        if: failure()
         run: |
           cat myResults/results.json
           
